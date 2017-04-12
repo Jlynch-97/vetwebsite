@@ -15,6 +15,10 @@ class ConsultantController extends Controller
     {
         /*adding the consultant guard so users cant access consultation page without authorisation*/
         $this->middleware('auth:consultant');
+        $this->middleware('auth:bookings');
+        $this->middleware('auth:reports');
+        $this->middleware('auth:animalrecords');
+        $this->middleware('auth:editcancelbookings');        
     }
 
     /**
@@ -25,5 +29,21 @@ class ConsultantController extends Controller
     public function index()
     {
         return view('consultant');
+    }
+    public function bookings()
+    {
+        return view('bookings');
+    }
+    public function reports()
+    {
+        return view('reports');
+    }
+    public function animalrecords()
+    {
+        return view('animalrecords');
+    }
+    public function editcancel()
+    {
+        return view('editcancelbookings');
     }
 }

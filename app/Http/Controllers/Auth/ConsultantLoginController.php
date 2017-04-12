@@ -37,6 +37,6 @@ class ConsultantLoginController extends Controller
     		return redirect()->intended(route('consultant.dashboard'));
     	}
     	/*if unsuccessful, go back to log in page*/
-    	return redirect()->back()->withInput($request->only('username'));
+    	return redirect()->back()->withInput($request->only('username', 'remember'));
     }
 }
