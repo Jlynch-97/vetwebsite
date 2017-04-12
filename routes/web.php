@@ -15,6 +15,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('welcome', function() {
+	return view('welcome');
+});
+
+Route::get('about', function() {
+	return view('about');
+});
+
+Route::get('location', function() {
+	return view('location');
+});
+
+Route::get('contact', function() {
+	return view('contact');
+});
+
 Auth::routes();
 
 /*using named routes for in future if urls need changed, it means 

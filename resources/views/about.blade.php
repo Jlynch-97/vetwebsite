@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Veterinary Management System</title>
+        <title>About</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -79,13 +79,18 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Veterinary Management System
+                    About
                 </div>
 
                 <div class="links">
+                    <a href="{{ url('/welcome') }}">Home</a>
                     <a href="{{ url('/about') }}">About</a>
                     <a href="{{ url('/location') }}">Location</a>
                     <a href="{{ url('/contact') }}">Contact</a>
+                </div>
+
+                <div>
+                    Information about the website to go here...
                 </div>
             </div>
         </div>
