@@ -49,10 +49,3 @@ Route::prefix('consultant')->group(function(){
 	Route::post('/login', 'Auth\ConsultantLoginController@login')->name('consultant.login.submit');
 	Route::get('/', 'ConsultantController@index')->name('consultant.dashboard');
 });
-
-Route::prefix('consultant')->group(function(){
-	Route::get('/', 'ConsultantController@bookings')->name('consultant.bookings');
-	Route::get('/', 'ConsultantController@reports')->name('consultant.reports');
-	Route::get('/', 'ConsultantController@animalrecords')->name('consultant.animalrecords');
-	Route::get('/', 'ConsultantController@editcancel')->name('consultant.editcancelbookings');
-});

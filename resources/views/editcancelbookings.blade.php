@@ -1,1 +1,0 @@
-edit cancel bookings page
