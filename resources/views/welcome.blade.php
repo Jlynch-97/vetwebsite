@@ -85,6 +85,7 @@
                 </div>
 
                 <div class="links">
+                <
                     <a href="{{ url('/about') }}">About</a>
                     <a href="{{ url('/location') }}">Location</a>
                     <a href="{{ url('/contact') }}">Contact</a>
