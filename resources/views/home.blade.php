@@ -13,11 +13,11 @@
             </div>
             <div class="content">            
                 <div class="links">
-                    <a href="{{ url('/welcome') }}">Animal Records</a>
-                    <a href="{{ url('/about') }}">Animal Bookings</a>
-                    <a href="{{ url('/location') }}">Booking History</a>
-                    <a href="{{ url('/contact') }}">Book New Appointment</a>
-                    <a href="{{ url('/contact') }}">Edit/Cancel Appointment</a>
+                    <a href="{{ url('/animalrecords') }}">Animal Records</a>
+                    <a href="{{ url('/animalbookings') }}">Animal Bookings</a>
+                    <a href="{{ url('/bookinghistory') }}">Booking History</a>
+                    <a href="{{ url('/booknewappointment') }}">Book New Appointment</a>
+                    <a href="{{ url('/editcancelappointment') }}">Edit/Cancel Appointment</a>
                 </div>
             </div>
         </div>
