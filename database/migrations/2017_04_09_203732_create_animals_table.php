@@ -13,11 +13,11 @@ class CreateAnimalsTable extends Migration
      */
     public function up()
     {
-        Schema::create('animal', function (Blueprint $table) {
+        Schema::create('animals', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name');
             $table->string('type');
             $table->integer('age');
-            $table->integer('appointmentID')->unsigned()->index();
             $table->rememberToken();
             $table->timestamps();
         }); 

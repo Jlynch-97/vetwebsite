@@ -13,12 +13,14 @@ class CreateAppointmentHistoryTable extends Migration
      */
     public function up()
     {
-        Schema::create('appointmentHistory', function (Blueprint $table) {
+        Schema::create('appointments', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('animalID')->unsigned()->index();
             $table->integer('keeperID')->unsigned()->index();
             $table->integer('consultantID')->unsigned()->index();
-            $table->string('appointmentType');   
+            $table->string('appointmentType');
+            $table->integer('time');
+            $table->string('date'); 
             $table->rememberToken();
             $table->timestamps();
         });  
