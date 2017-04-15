@@ -11,11 +11,11 @@
                     You are logged in as <strong>{{ Auth::user()->username }}</strong>
                 </div>
             </div>
+
             <div class="content">            
                 <div class="links">
-                    <a href="{{ url('/animalrecords') }}">Animal Records</a>
-                    <a href="{{ url('/animalbookings') }}">Animal Bookings</a>
-                    <a href="{{ url('/bookinghistory') }}">Booking History</a>
+                    <a href="{{ url('/animalrecords') }}">View Animal Records</a>
+                    <a href="{{ url('/bookinghistory') }}">View Appointments</a>
                     <a href="{{ url('/booknewappointment') }}">Book New Appointment</a>
                     <a href="{{ url('/editcancelappointment') }}">Edit/Cancel Appointment</a>
                 </div>

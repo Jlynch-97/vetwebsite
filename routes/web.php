@@ -44,7 +44,6 @@ Route::get('/home', 'HomeController@index');
 
 /*Routes for the keeper (user)*/
 Route::get('/animalrecords', 'AnimalRecordsController@index');
-Route::get('/animalbookings', 'AnimalBookingsController@index');
 Route::get('/bookinghistory', 'BookingHistoryController@index');
 Route::get('/booknewappointment', 'BookNewAppointmentController@index');
 Route::get('/editcancelappointment', 'EditCancelAppointmentController@index');
