@@ -38,8 +38,31 @@
                     <a href="{{ url('/contact')}}">Contact</a>
                 </div>
 
-                <div>
-                    A contact form is to go here...
+                <div id ="contactform">
+                <form = action="{{url('contact')}}" method="POST">
+                {{ csrf_field() }}
+                    <div class ="formgroup">
+                        <label name ="name">Name</label>
+                        <input id ="name" name = "name" class="form-control">
+                    </div>
+                     <div class ="formgroup">
+                        <label name ="email">Email</label>
+                        <input id ="email" name = "email" class="form-control">
+                    </div>
+
+                    <div class ="formgroup">
+                        <label name ="subject">Subject</label>
+                        <input id ="subject" name = "subject" class="form-control">
+                    </div>
+
+                     <div class ="formgroup">
+                        <label name ="message">Message:</label>
+                        <textarea id="message" name = "message" class="form-control"></textarea>
+                    </div>
+
+                    <input type="submit" value="Send Message" class="btn btn-success">
+                </form>
+
                 </div>
             </div>
         </div>

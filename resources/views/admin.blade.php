@@ -14,9 +14,9 @@
             <div class="panel panel-default">
             <div class="panel-body">
                 <div class="links">
-                    <a href="{{ url('/welcome') }}">Keeper Record</a>
-                    <a href="{{ url('/about') }}">Consultant Record</a>
-                    <a href="{{ url('/location') }}">Animal Record</a>
+                    <a href="{{ url('/keeperrecord') }}">Keeper Record</a>
+                    <a href="{{ url('/consultantrecord') }}">Consultant Record</a>
+                    <a href="{{ url('/animalrecords') }}">Animal Record</a>
                 </div>
                 </div>
             </div>                            
