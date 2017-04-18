@@ -15,21 +15,18 @@
                     You are logged in as <strong>{{ Auth::user()->username }}</strong>
                 </div>
             </div>
+            <div class="content">
+            <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="links">
+                    <a href="https://laravel.com/docs">View Animal Records</a>
+                    <a href="https://laravel-news.com">View Appointments</a>
+                    <a href="https://forge.laravel.com">Edit/Cancel Appointment</a>
+                </div>
+                </div>
+            </div>                            
+            </div>
         </div>
     </div>
 </div>
-<body>
-    <div class="content">
-                <div class="title m-b-md" style="color: #636b6f;font-family: 'Raleway', sans-serif;font-weight: 100; font-size: 60px;margin-left: px;">
-                    Consultant
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Animal Records</a>
-                    <a href="https://laravel-news.com">Edit/Cancel Bookings</a>
-                    <a href="https://forge.laravel.com">Reports</a>
-                    <a href="https://github.com/laravel/laravel">Bookings</a>
-                </div>
-            </div>
-</body>
 @endsection
