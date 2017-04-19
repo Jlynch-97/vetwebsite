@@ -17,6 +17,13 @@ class AppointmentController extends Controller
     public function index()
     {
         /*get appointments and load them into the view*/
+        $appointment = Appointment::all();
+        return view::make('bookinghistory')
+        ->with('appointments.show', $appointment);
+
+        $appointment = Appointment::all();
+        return view::make('editcancelappointment')
+        ->with('appointments.show', $appointment);
     }
 
     /**
@@ -84,11 +91,11 @@ class AppointmentController extends Controller
     {
         $appointment = Appointment::find($id);
         return view::make('bookinghistory')
-        ->with('appointment', $appointment);
+        ->with('appointments.show', $appointment);
 
         $appointment = Appointment::find($id);
         return view::make('editcancelappointment')
-        ->with('appointment', $appointment);
+        ->with('appointments.show', $appointment);
     }
 
     /**
@@ -99,7 +106,9 @@ class AppointmentController extends Controller
      */
     public function edit($id)
     {
-        //
+        $appointment = Appointment::find($id);
+        return view::make('editcancelappointment')
+        ->with('appointments.edit', $appointment);
     }
 
     /**
