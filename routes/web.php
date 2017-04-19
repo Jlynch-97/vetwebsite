@@ -32,6 +32,11 @@ Route::get('contact', function() {
 	return view('contact');
 });
 
+/*Route to control the dashboards when working with the animals tabble*/
+Route::resource('animals', 'AnimalController');
+/*Route to control the dashboards when working with the animals tabble*/
+Route::resource('appointments', 'AppointmentController');
+
 
 /*Routes for authorised users (ones that require authentication)*/
 Auth::routes();
