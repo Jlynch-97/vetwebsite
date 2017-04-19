@@ -86,9 +86,9 @@
     </div>
 
     <!-- Scripts -->
-<<<<<<< HEAD
+
     <script src="{{ asset('js/app.js') }}"/>
-=======
+
     <script src="{{ asset('js/app.js') }}"></script>
 
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -99,6 +99,6 @@
     });
   </script>
   
->>>>>>> origin/master
+
 </body>
 </html>
