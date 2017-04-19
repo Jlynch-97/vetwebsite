@@ -13,7 +13,9 @@ class AnimalController extends Controller
      */
     public function index()
     {
-        //
+        $animal = App\animal::all();
+        return view::make('animalrecords')
+        ->with('animals.show', $animal);
     }
 
     /**
@@ -37,7 +39,7 @@ class AnimalController extends Controller
         //
     }
 
-    /**
+    /** 
      * Display the specified resource.
      *
      * @param  int  $id
@@ -45,7 +47,9 @@ class AnimalController extends Controller
      */
     public function show($id)
     {
-        //
+        $animal = App\animal::all();
+        return view::make('animalrecords')
+        ->with('animals.show', $animal);
     }
 
     /**

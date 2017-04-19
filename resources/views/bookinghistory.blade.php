@@ -14,7 +14,6 @@
     <!-- used https://scotch.io/tutorials/simple-laravel-crud-with-resource-controllers -->
     	<div class="col-md-8 col-md-offset-2">
     		<hr>
-            @if(isset($appointment))
     		<table class="table table-striped table-bordered">
     <thead>
         <tr>
@@ -28,20 +27,22 @@
         </tr>
     </thead>
     <tbody>
-    @foreach($appointment as $key => $value)
+    <?php 
+    $appointment = App\Appointment::all();
+    ?>
+    @foreach($appointment as $app)
         <tr>
-            <td>{{ $value->id }}</td>
-            <td>{{ $value->animalID }}</td>
-            <td>{{ $value->keeperID }}</td>
-            <td>{{ $value->consultantID }}</td>
-            <td>{{ $value->appointmentType }}</td>
-            <td>{{ $value->date }}</td>
-            <td>{{ $value->time }}</td>
+            <td>{{ $app->id }}</td>
+            <td>{{ $app->animalID }}</td>
+            <td>{{ $app->keeperID }}</td>
+            <td>{{ $app->consultantID }}</td>
+            <td>{{ $app->appointmentType }}</td>
+            <td>{{ $app->date }}</td>
+            <td>{{ $app->time }}</td>
         </tr>
     @endforeach
     </tbody>
 </table>
-@endif
     </div>
    </div>
 </div>
